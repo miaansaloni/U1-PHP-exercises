@@ -36,6 +36,12 @@ $teams = [
     'Milan' => ['Maignan', 'Tomori', 'Kjaer', 'Hernandez', 'Calabria', 'Kessie', 'Bennacer', 'Saelemaekers', 'Diaz', 'Leao', 'Ibrahimovic'],
     'Juventus' => ['Szczesny', 'De Ligt', 'Chiellini', 'Danilo', 'Alex Sandro', 'Locatelli', 'Bentancur', 'Chiesa', 'Kulusevski', 'Dybala', 'Morata'],
 ];
+
+$games = [
+    ["Inter", "Milan"],
+    ["Juventus", "Napoli"],
+    ["Milan", "Juventus"],
+];
 ?>
 
 <!DOCTYPE html>
@@ -46,12 +52,16 @@ $teams = [
     <title>Document</title>
 </head>
 <body>
+
+<!-- ESERCIZIO 1 -->
 <h2>
 <?php
 echo "Oggi è: $week_day $day $month $year";
 ?>
 </h2> 
 
+
+<!-- ESERCIZIO 2 -->
 <p><?php
 foreach ($teams as $team => $formazione) {
     echo "Squadra: $team <br>";
@@ -66,6 +76,8 @@ foreach ($teams as $team => $formazione) {
 
 ?></p>
 
+
+<!-- ESERCIZIO 2 (metodo 2) -->
 <ul><?php
         foreach($teams as $team => $formazione) { ?>
         <br>
@@ -80,7 +92,31 @@ foreach ($teams as $team => $formazione) {
         } ?>
     </ul>
 
+<!-- ESERCIZIO 3 --> 
+<p><?php
 
+
+// foreach ($games as $game) {
+//     $squadra_casa = $game[0];
+//     $squadra_ospite = $game[1];
+
+//     echo "Partita: $squadra_casa vs $squadra_ospite <br>";
+//     echo "Formazione $squadra_casa: <br>";
+//     echo "<ul>";
+//     foreach ($teams[$squadra_casa] as $player) {
+//         echo "<li>$player</li>";
+//     }
+//     echo "</ul>";
+
+//     echo "Formazione $squadra_ospite: <br>";
+//     echo "<ul>";
+//     foreach ($teams[$squadra_ospite] as $player) {
+//         echo "<li>$player</li>";
+//     }
+//     echo "</ul>";
+//     echo "<br>";
+// }
+?></p>
 
 </body>
 </html>
