@@ -1,4 +1,6 @@
 <?php 
+// EX n 1: "Print today's date dynamically in Italian. 
+// Example: Wednesday, December 16, 2020."
 $week_days_IT = [
     'Sunday' => 'Domenica',
     'Monday' => 'Lunedì',
@@ -30,13 +32,16 @@ $day = $todays_date->format('d');
 $month = $months_IT[$todays_date->format('F')];
 $year = $todays_date->format('Y');
 
-
+// EX n 2: "Create the array of Serie A teams and their respective lineup. 
+// Use loops to print the data."
 $teams = [
     'Inter' => ['Handanovic', 'de Vrij', 'Bastoni', 'Skriniar', 'Perisic', 'Brozovic', 'Barella', 'Calhanoglu', 'Darmian', 'Lautaro Martinez', 'Zapata'],
     'Milan' => ['Maignan', 'Tomori', 'Kjaer', 'Hernandez', 'Calabria', 'Kessie', 'Bennacer', 'Saelemaekers', 'Diaz', 'Leao', 'Ibrahimovic'],
     'Juventus' => ['Szczesny', 'De Ligt', 'Chiellini', 'Danilo', 'Alex Sandro', 'Locatelli', 'Bentancur', 'Chiesa', 'Kulusevski', 'Dybala', 'Morata'],
 ];
 
+// EX n 3: "Create the array of Serie A matches and teams along with 
+// their respective formations. Use loops to print the data."
 $games = [
     ["Inter", "Milan"],
     ["Juventus", "Napoli"],
